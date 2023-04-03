@@ -1,0 +1,109 @@
+*{
+    font-family: 'Open Sans';
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* row center */
+
+.flexCenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flexSpaceAround{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.flexSpaceBetween{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flexSpaceEvenly{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.flexLeft{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.flexRight{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+/* column */
+
+.flexColumnCenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.flexColumnSpaceAround{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.flexColumnSpaceBetween{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.flexColumnSpaceEvenly{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+.flexColumnLeft{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-direction: column;
+}
+
+.flexColumnRight{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    flex-direction: column;
+}
+
+$white: #ffffff;
+
+$theme-colors: (
+    "light":      #dadfde,
+    "dark":       #030301,
+    "primary":    #b71c1c,
+    "secondary":  #c0d1f2,
+    "info":       #2b6dae,
+    "success":    #66ae1e,
+    "warning":    #fec379,
+    "danger":     #f50f68,
+);
+
+
+@import 'bootstrap';
+
+
