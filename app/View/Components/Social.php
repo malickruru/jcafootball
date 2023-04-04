@@ -16,6 +16,9 @@ class Social extends Component
         [
             "icon" => "<i class='bx bxl-google'></i>",
             "url" => "mailto:jcafootball1932@gmail.com"
+        ],[
+            "icon" => "<i class='bx bxl-instagram'></i>",
+            "url" => "https://www.instagram.com/jeunesse_club_abidjan/?igshid=YmMyMTA2M2Y="
         ]
         ];
     public function __construct()

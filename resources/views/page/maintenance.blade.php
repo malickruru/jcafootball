@@ -50,10 +50,10 @@
            
         <div class="maintenance-content flexColumnSpaceAround">
             <div class="flexColumnCenter">
-                <x-logo :width=150></x-logo>
-                <h2 class="text-primary p-2">
+                <x-logo :width=300></x-logo>
+                {{-- <h2 class="text-primary p-2">
                     Jeunesse Club d'Abidjan
-                </h2>
+                </h2> --}}
             </div>
 
             <div class="text-white">
