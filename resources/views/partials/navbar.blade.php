@@ -129,7 +129,7 @@
     }
 </style>
 <header class="d-flex  pl-0 position-fixed ">
-    <div class="logo p-3 flexSpaceBetween bg-primary text-white">
+    <div class="logo p-3 flexSpaceBetween bg-primary text-white" onclick="window.location.href= '/'">
 
         <x-logo :width=75 :color=1></x-logo>
         <div class="h3">
@@ -137,11 +137,11 @@
         </div>
     </div>
     <div class="link flexRight ">
-        <a href="#" class="desktop-only">Actualité</a>
-        <a href="#" class="desktop-only">A Propos</a>
-        <a href="#" class="desktop-only">Equipe</a>
-        <a href="#" class="desktop-only">Contact</a>
-        <a href="#" class="desktop-only">Devenir membre</a>
+        <a href="/actu" class="desktop-only">Actualité</a>
+        <a href="/about" class="desktop-only">A Propos</a>
+        <a href="/team" class="desktop-only">Equipe</a>
+        <a href="/contact" class="desktop-only">Contact</a>
+        <a href="/member" class="desktop-only">Devenir membre</a>
         <a class="toggle-sidebar mobile-only" style="font-size : 2em">
             <i class='menuIcon bx bx-menu'></i>
             <i class='menuIcon bx bx-x' style="display: none"></i>
@@ -151,11 +151,11 @@
 
 <div class="sidebar">
     <ul class="pt-4">
-        <li><a href="#">Actualité</a></li>
-        <li><a href="#">A Propos</a></li>
-        <li><a href="#">Equipe</a></li>
-        <li><a href="#">Contact</a></li>
-        <li><a href="#">Devenir membre</a></li>
+        <li><a href="/actu">Actualité</a></li>
+        <li><a href="/about">A Propos</a></li>
+        <li><a href="/team">Equipe</a></li>
+        <li><a href="/contact">Contact</a></li>
+        <li><a href="/member">Devenir membre</a></li>
     </ul>
 </div>
 

@@ -20,6 +20,7 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
         width: 100%;
         height: 100%;
         background-color: rgba(0, 0, 0, 0.5);
@@ -28,40 +29,66 @@
 
     .banner-content {
         font-size: 24px;
-        max-width: 600px;
+        /* max-width: 600px; */
         line-height: 1.4;
         color: #fff;
+        margin-top: 100px;
     }
 
     .banner-content h2 {
-        font-size: 40px;
+        font-family: sans-serif;
+        font-weight: 700;
+        font-size: 50px;
         margin: 0 0 10px;
+        text-align: center;
     }
 
     .banner-content p {
-        margin: 0
+        font-family: sans-serif;
+        font-weight: 700;
+        margin: 0;
+        text-align: center;
+    }
+
+    .banner-content p a{
+        text-decoration: orange;
+        color: #fec379;
+    }
+    .banner-content p a:hover{
+        /* text-decoration: underline; */
+        color: #b71c1c;
     }
     .swiper-button-prev,
     .swiper-button-next {
         color: #fff;
     }
 
-    /* 
 
-    .swiper-button-prev {
-        transform: translateX(50px);
+    /* mobile */
+    @media screen and (max-width : 768px){
+        .banner-content {
+        font-size: 16px;
+        /* max-width: 600px; */
+        line-height: 1.4;
+        color: #fff;
+        /* margin-top: 100px; */
     }
 
-    .swiper-button-next {
-        transform: translateX(-50px);
-    } */
+    .banner-content h2 {
+        font-family: sans-serif;
+        font-weight: 700;
+        font-size: 35px;
+        /* margin: 0 0 10px; */
+        text-align: center;
+    }
 
-    /* .swiper-container:hover .swiper-button-prev,
-    .swiper-container:hover .swiper-button-next {
-        transform: translateX(0);
-        opacity: 1;
-        visibility: visible;
-    } */
+    .banner-content p {
+        font-family: sans-serif;
+        font-weight: 700;
+        margin: 0;
+        text-align: center;
+    }
+}
 </style>
 
 <div class="swiper">
@@ -85,11 +112,9 @@
                 <div class="swiper-image-inner" style="background-image: url(image/IMG-20230330-WA0014.jpg);">
                     <div class="banner-content">
                         <h2 data-swiper-parallax-duration="1500" data-swiper-parallax-opacity="0"
-                            data-swiper-parallax="-700"> Slide 1</h2>
+                            data-swiper-parallax="-700"> Qui sommes nous ?</h2>
                         <p data-swiper-parallax-duration="1700" data-swiper-parallax-opacity="0"
-                            data-swiper-parallax="-1000">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                            do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                            data-swiper-parallax="-1000"> <a href="">Voir</a>  l'actualité du club</p>
                     </div>
                 </div>
             </div>
@@ -99,11 +124,9 @@
                 <div class="swiper-image-inner" style="background-image: url(image/IMG-20230330-WA0015.jpg);">
                     <div class="banner-content">
                         <h2 data-swiper-parallax-duration="1500" data-swiper-parallax-opacity="0"
-                            data-swiper-parallax="-700"> Slide 1</h2>
+                            data-swiper-parallax="-700"> Vous êtes fan du JCA ?</h2>
                         <p data-swiper-parallax-duration="1700" data-swiper-parallax-opacity="0"
-                            data-swiper-parallax="-1000">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                            do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                            data-swiper-parallax="-1000"><a href="">Inscrivez-vous</a>  en tant que membre</p>
                     </div>
                 </div>
             </div>
@@ -131,6 +154,7 @@
         navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
-        }
+        },
+        effect:'slide'
     });
 </script>

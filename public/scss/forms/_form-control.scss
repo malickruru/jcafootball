@@ -17,11 +17,11 @@
   appearance: none; // Fix appearance for date inputs in Safari
 
   // Note: This has no effect on <select>s in some browsers, due to the limited stylability of `<select>`s in CSS.
-  @include border-radius($input-border-radius, 0);
+  // @include border-radius($input-border-radius, 0);
 
-  @include box-shadow($input-box-shadow);
+  // @include box-shadow($input-box-shadow);
   @include transition($input-transition);
-
+outline: none;
   &[type="file"] {
     overflow: hidden; // prevent pseudo element button overlap
 
@@ -34,14 +34,14 @@
   &:focus {
     color: $input-focus-color;
     background-color: $input-focus-bg;
-    border-color: $input-focus-border-color;
-    outline: 0;
-    @if $enable-shadows {
-      @include box-shadow($input-box-shadow, $input-focus-box-shadow);
-    } @else {
-      // Avoid using mixin so we can pass custom focus shadow properly
-      box-shadow: $input-focus-box-shadow;
-    }
+    // border-color: $input-focus-border-color;
+    outline: none;
+    // @if $enable-shadows {
+    //   @include box-shadow($input-box-shadow, $input-focus-box-shadow);
+    // } @else {
+    //   // Avoid using mixin so we can pass custom focus shadow properly
+    //   box-shadow: $input-focus-box-shadow;
+    // }
   }
 
   &::-webkit-date-and-time-value {

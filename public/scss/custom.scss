@@ -91,6 +91,12 @@ body{
     flex-direction: column;
 }
 
+// section
+.section{
+    max-width: 100vw;
+    overflow: hidden;
+}
+
 // mobile
 
 .mobile-only{
