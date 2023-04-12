@@ -21,26 +21,29 @@
             @endphp
             <x-title :text="$text" :span="$span"></x-title>
             <div class="w-75">
+                <form action="/contact" method="post">
+                    @csrf
                 <div class="mb-3">
                     <label for="exampleFormControlInput1" class="form-label">Nom</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="votre nom">
+                    <input name="nom" type="text" class="form-control" id="exampleFormControlInput1" placeholder="votre nom">
                 </div>
                 <div class="mb-3">
                     <label for="exampleFormControlInput1" class="form-label">Prénom</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="votre prénom">
+                    <input name="prenom" type="text" class="form-control" id="exampleFormControlInput1" placeholder="votre prénom">
                 </div>
                 <div class="mb-3">
                     <label for="exampleFormControlInput1" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1"
+                    <input name="email" type="email" class="form-control" id="exampleFormControlInput1"
                         placeholder="name@email.com">
                 </div>
                 <div class="mb-3">
                     <label for="exampleFormControlTextarea1" class="form-label">Votre message</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    <textarea name="message" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                 </div>
-                <div class="btn btn-outline-primary">
+                <button type="submit" class="btn btn-outline-primary">
                     Envoyer
-                </div>
+                </button>
+            </form>
             </div>
 
         </div>

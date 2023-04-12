@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\ContactController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -25,3 +25,5 @@ Route::get('/contact', function () {
 Route::get('/test', function () {
     return view('page.test');
 });
+
+Route::post('/contact', [ContactController::class, 'sendEmail']);

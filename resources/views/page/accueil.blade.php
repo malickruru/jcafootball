@@ -9,5 +9,6 @@
     @include('partials.hero')
     @include('partials.section.contact')
     @include('partials.footer')
+    @include('components.message')
 
 @endsection
