@@ -1,7 +1,7 @@
 <style>
     footer{
-        background-color: rgba(0, 0, 0, 0.8);
-        color: white;
+        background-color: #c0d1f2;
+        color: black;
         padding: 20px;
     }
 
@@ -17,7 +17,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6 flexLeft">
-                <x-logo :width=75 :color=1></x-logo>
+                <x-logo :width=75 ></x-logo>
                 <h2 class="mx-3">Jeunesse club d'abidjan</h2>
             </div>
             <div class="col-md-6 flexLeft">
@@ -34,17 +34,17 @@
             <div class="col-md-6">
                 <form class="d-flex" role="search">
                     <input style="max-width: 60%" class="form-control me-2 " type="text" placeholder="Votre email" aria-label="Search">
-                    <button class="btn btn-outline-secondary" type="submit">S'inscrire</button>
+                    <button class="btn btn-outline-primary" type="submit">S'inscrire</button>
                 </form>
             </div>
         </div>
         <div class="row">
             <div class="col-md-6">
-                <a class="btn btn-link text-secondary " href="/actu">Actualité</a>
-                <a class="btn btn-link text-secondary" href="/about">A Propos</a>
-                <a class="btn btn-link text-secondary" href="/team">Equipe</a>
-                <a class="btn btn-link text-secondary" href="/contact">Contact</a>
-                <a class="btn btn-link text-secondary" href="/member">Devenir membre</a>
+                <a class="btn btn-link text-primary " href="/actu">Actualité</a>
+                <a class="btn btn-link text-primary" href="/a_propos">Qui sommes nous ?</a>
+                <a class="btn btn-link text-primary" href="/team">Equipe</a>
+                <a class="btn btn-link text-primary" href="/contact">Contact</a>
+                <a class="btn btn-link text-primary" href="/member">Devenir membre</a>
             </div>
             <div class="col-md-6">
                 Copyright © 2023 Jeunesse Club d'Abidjan. Tous Droit Réservé.

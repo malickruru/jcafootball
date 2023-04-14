@@ -21,7 +21,7 @@
 <div class="social d-flex">
     
     @foreach ($resaux as $r)
-        <a href="{{$r['url']}}" class="text-secondary px-3" >
+        <a href="{{$r['url']}}" class="text-primary px-3" >
             {!! $r['icon'] !!}
          </a>
     @endforeach

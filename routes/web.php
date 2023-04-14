@@ -2,6 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\Controller;
+use App\Http\Controllers\PalmaresController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,13 +16,13 @@ use App\Http\Controllers\ContactController;
 |
 */
 
-Route::get('/', function () {
-    return view('page.accueil');
-});
+Route::get('/', [Controller::class, 'home']);
 
 Route::get('/contact', function () {
     return view('page.contact');
 });
+
+Route::get('/a_propos', [PalmaresController::class, 'about']);
 
 
 Route::get('/test', function () {

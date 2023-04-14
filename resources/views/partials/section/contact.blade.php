@@ -59,10 +59,10 @@
 </div>
 
 <script>
-    $(document).ready(function () {
-        $("#map").width(
-            $(".contact-map").width();
-        );
-        console.log('ok');
-    });
+    // $(document).ready(function () {
+    //     $("#map").width(
+    //         $(".contact-map").width();
+    //     );
+    //     console.log('ok');
+    // });
 </script>

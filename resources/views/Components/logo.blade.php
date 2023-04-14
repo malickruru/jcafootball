@@ -3,6 +3,6 @@
     <img src={{"image/logo-blanc.png"}} width={{$width.'px'}}>
         @break
     @default
-        <img src={{"image/logo.png"}} width={{$width.'px'}}>
+        <img src={{"image/logo-removebg-preview.png"}} width={{$width.'px'}}>
 @endswitch
 

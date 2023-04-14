@@ -58,8 +58,8 @@
         /* text-decoration: underline; */
         color: #b71c1c;
     }
-    .swiper-button-prev,
-    .swiper-button-next {
+    .swiper .swiper-button-prev,
+    .swiper .swiper-button-next {
         color: #fff;
     }
 
@@ -91,7 +91,7 @@
 }
 </style>
 
-<div class="swiper">
+<div class="swiper hero">
     <!-- Additional required wrapper -->
     <div class="swiper-wrapper">
         <!-- Slides -->
@@ -143,7 +143,7 @@
 </div>
 
 <script>
-    const swiper = new Swiper('.swiper', {
+    const swiper = new Swiper('.hero', {
         loop: true,
         autoplay : true,
         speed: 1500,
@@ -157,4 +157,6 @@
         },
         effect:'slide'
     });
+
+    
 </script>

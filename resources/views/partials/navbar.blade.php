@@ -4,14 +4,14 @@
         left: 0;
         right: 0;
         /* background-color: #fff; */
-        background-color: rgba(0, 0, 0, 0.8);
+        background-color: #c0d1f2;
         padding: 0;
         z-index: 999;
     }
 
     .logo {
         border-width: 1px 1px 0px 1px;
-
+        cursor: pointer;
     }
 
     .logo .h3 {
@@ -62,11 +62,10 @@
         padding: 40px;
         text-decoration: none;
         /* color: #fff */
-
         background-image: linear-gradient(to right,
-                #b71c1c,
-                #b71c1c 50%,
-                #fff 50%);
+                #fff,
+                #fff 50%,
+                #b71c1c 50%);
         font-weight: 700;
         background-size: 200% 100%;
         background-position: -100%;
@@ -80,7 +79,7 @@
 
     .link a:before {
         content: '';
-        background: #b71c1c;
+        background: #fff;
         display: block;
         position: absolute;
         bottom: -3px;
@@ -127,6 +126,28 @@
         text-decoration: none;
         font-size: 2em;
     }
+
+    @media screen and (max-width : 768px){
+        .link a{
+            padding: 25px;
+        }
+
+        .logo:hover .h3 {
+        width: 0px;
+    }
+    .logo img{
+        max-width: 50px !important;
+    }
+
+    .link{
+        margin-right: 0;
+        padding-right: 0;
+    }
+
+    .logo:after{
+        border: 0;
+    }
+}
 </style>
 <header class="d-flex  pl-0 position-fixed ">
     <div class="logo p-3 flexSpaceBetween bg-primary text-white" onclick="window.location.href= '/'">
@@ -138,7 +159,7 @@
     </div>
     <div class="link flexRight ">
         <a href="/actu" class="desktop-only">Actualité</a>
-        <a href="/about" class="desktop-only">A Propos</a>
+        <a href="/a_propos" class="desktop-only">Qui sommes nous ?</a>
         <a href="/team" class="desktop-only">Equipe</a>
         <a href="/contact" class="desktop-only">Contact</a>
         <a href="/member" class="desktop-only">Devenir membre</a>
@@ -152,7 +173,7 @@
 <div class="sidebar">
     <ul class="pt-4">
         <li><a href="/actu">Actualité</a></li>
-        <li><a href="/about">A Propos</a></li>
+        <li><a href="/a_propos">Qui sommes nous ?</a></li>
         <li><a href="/team">Equipe</a></li>
         <li><a href="/contact">Contact</a></li>
         <li><a href="/member">Devenir membre</a></li>
