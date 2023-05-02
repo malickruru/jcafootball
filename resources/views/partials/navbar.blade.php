@@ -4,7 +4,7 @@
         left: 0;
         right: 0;
         /* background-color: #fff; */
-        background-color: #c0d1f2;
+        background-color: #6CAEE0;
         padding: 0;
         z-index: 999;
     }
@@ -65,7 +65,7 @@
         background-image: linear-gradient(to right,
                 #fff,
                 #fff 50%,
-                #b71c1c 50%);
+                #fff 50%);
         font-weight: 700;
         background-size: 200% 100%;
         background-position: -100%;
@@ -97,6 +97,9 @@
         width: 100%;
     }
 
+    .dropdown-item{
+        padding: 10px !important;
+    }
     .sidebar {
         background-color: #f2f2f2;
         width: 100vw;
@@ -160,7 +163,12 @@
     <div class="link flexRight ">
         <a href="/actu" class="desktop-only">Actualité</a>
         <a href="/a_propos" class="desktop-only">Qui sommes nous ?</a>
-        <a href="/team" class="desktop-only">Equipe</a>
+        <a href="#" class="desktop-only" role="button" data-bs-toggle="dropdown" aria-expanded="false">Equipe</a>
+        <ul class="dropdown-menu bg-secondary">
+            <li><a class="dropdown-item" href="/match">Résultats</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="/joueur">Joueurs</a></li>
+          </ul>
         <a href="/contact" class="desktop-only">Contact</a>
         <a href="/member" class="desktop-only">Devenir membre</a>
         <a class="toggle-sidebar mobile-only" style="font-size : 2em">
@@ -174,7 +182,7 @@
     <ul class="pt-4">
         <li><a href="/actu">Actualité</a></li>
         <li><a href="/a_propos">Qui sommes nous ?</a></li>
-        <li><a href="/team">Equipe</a></li>
+        <li><a href="/match">Résultats</a></li>
         <li><a href="/contact">Contact</a></li>
         <li><a href="/member">Devenir membre</a></li>
     </ul>

@@ -18,6 +18,8 @@ use App\Http\Controllers\PalmaresController;
 
 Route::get('/', [Controller::class, 'home']);
 
+Route::get('/match', [Controller::class, 'match']);
+
 Route::get('/contact', function () {
     return view('page.contact');
 });

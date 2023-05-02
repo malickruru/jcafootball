@@ -2,6 +2,9 @@
     font-family: 'Open Sans';
 }
 
+
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css");
+
 body{
     padding: 0;
     margin: 0;
@@ -119,7 +122,8 @@ $theme-colors: (
     "light":      #dadfde,
     "dark":       #030301,
     "primary":    #b71c1c,
-    "secondary":  #c0d1f2,
+    // "secondary":  #c0d1f2,
+    "secondary":  #6CAEE0,
     "info":       #2b6dae,
     "success":    #66ae1e,
     "warning":    #fec379,

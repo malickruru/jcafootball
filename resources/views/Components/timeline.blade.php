@@ -51,17 +51,17 @@
   position: absolute;
   background: #b71c1c;
   left: -3.5px;
-  top: 0;
+  /* top: 0; */
 }
-.timeline ul li span:after {
+/* .timeline ul li span:after {
   top: 100%;
-}
+} */
 .timeline ul li > div {
   margin-left: 10px;  
 }
 .timeline div .title, .timeline div .type {
   font-weight: 600;
-  font-size: 12px;
+  font-size: 24px;
 }
 .timeline div .info {
   font-weight: 300;
@@ -74,8 +74,9 @@
 } */
 .timeline span.number span {
   position: absolute;
-  font-size: 10px;
-  left: -35px;
+  font-size: 20px;
+  left: -55px;
+  top: -6px;
   font-weight: bold;
 }
 .timeline span.number span:first-child {
@@ -83,6 +84,15 @@
 }
 .timeline span.number span:last-child {
   top: 100%;
+}
+
+
+@media screen and (max-width : 768px){
+  .timeline span.number span {
+ 
+  font-size: 16px;
+  
+}
 }
 </style>
 

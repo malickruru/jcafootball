@@ -1,7 +1,7 @@
 <style>
     footer{
-        background-color: #c0d1f2;
-        color: black;
+        background-color: #6CAEE0;
+        color: white;
         padding: 20px;
     }
 
@@ -17,7 +17,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6 flexLeft">
-                <x-logo :width=75 ></x-logo>
+                <x-logo :width=75 :color=1 ></x-logo>
                 <h2 class="mx-3">Jeunesse club d'abidjan</h2>
             </div>
             <div class="col-md-6 flexLeft">
@@ -34,7 +34,7 @@
             <div class="col-md-6">
                 <form class="d-flex" role="search">
                     <input style="max-width: 60%" class="form-control me-2 " type="text" placeholder="Votre email" aria-label="Search">
-                    <button class="btn btn-outline-primary" type="submit">S'inscrire</button>
+                    <button class="btn btn-outline-light" type="submit">S'inscrire</button>
                 </form>
             </div>
         </div>
@@ -42,12 +42,12 @@
             <div class="col-md-6">
                 <a class="btn btn-link text-primary " href="/actu">Actualité</a>
                 <a class="btn btn-link text-primary" href="/a_propos">Qui sommes nous ?</a>
-                <a class="btn btn-link text-primary" href="/team">Equipe</a>
+                <a class="btn btn-link text-primary" href="/match">Résultats</a>
                 <a class="btn btn-link text-primary" href="/contact">Contact</a>
                 <a class="btn btn-link text-primary" href="/member">Devenir membre</a>
             </div>
             <div class="col-md-6">
-                Copyright © 2023 Jeunesse Club d'Abidjan. Tous Droit Réservé.
+                Copyright © 2023 Jeunesse Club d'Abidjan. Tous droits réservés.
             </div>
         </div>
     </div>

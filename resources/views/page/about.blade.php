@@ -67,7 +67,7 @@
 
         .about .overlay {
             position: absolute;
-            background-color: rgba(0, 0, 0, 0.7);
+            /* background-color: rgba(0, 0, 0, 0.4); */
             top: 0;
             bottom: 0;
             left: 0;
@@ -83,6 +83,7 @@
             right: 0;
             margin: 20px;
             border: 1px #fff solid
+            
         }
 
         .about .text span {
@@ -267,7 +268,7 @@
                 <p >
                     La Jeunesse Club d'Abidjan est un club de football ivoirien fondé le 4 janvier 1932 et basé dans la
                     ville d'Abidjan, en Côte d'Ivoire.
-                   <br> <br> Le club est considéré comme l'un des plus anciens et des plus
+                   <br> <br> Le club est considéré comme le  plus ancien et l'un des plus
                     respectés du pays. La Jeunesse Club d'Abidjan a remporté plusieurs titres de coupes nationales.
                 </p>
             </div>
@@ -276,10 +277,10 @@
                     <div class="overlay">
 
                     </div>
-                    <div class="text flexColumnCenter">
+                    <div class="text flexColumnCenter d-none">
                         <div class="text-white flexCenter ">
                             <i class='bx bxs-quote-left mb-4 '></i>
-                            <h3 class="text-white text-center mx-2">Toujours plus fort</h3>
+                            <h3 class="bg-white text-center mx-2">Toujours plus fort</h3>
                             <i class='bx bxs-quote-right mb-4'></i>
                         </div>
                         <span class="my-2" data-aos="zoom-in" data-aos-delay="300"></span>

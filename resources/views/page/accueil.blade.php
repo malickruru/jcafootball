@@ -25,6 +25,7 @@
     @include('partials.navbar')
     @include('partials.hero')
     @include('partials.section.palmares')
+    @include('partials.section.prochainMatch')
     @include('partials.section.contact')
     @include('partials.footer')
     @include('components.message')
