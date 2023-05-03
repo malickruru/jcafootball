@@ -20,6 +20,8 @@ Route::get('/', [Controller::class, 'home']);
 
 Route::get('/match', [Controller::class, 'match']);
 
+Route::get('/joueur', [Controller::class, 'joueur']);
+
 Route::get('/contact', function () {
     return view('page.contact');
 });

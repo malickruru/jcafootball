@@ -111,6 +111,10 @@ body{
         display: flex;
     }
 
+    .mobile-column{
+        flex-direction: column;
+    }
+
     .desktop-only{
         display: none;
     }

@@ -6,10 +6,10 @@
     
         // Extraire la valeur de l'attribut "name"
     $nom = $tableau[0]['name'];
-
+    
     // Extraire la partie du chemin de fichier après "administration/"
     $chemin = substr($nom, strpos($nom, 'administration/') + strlen('administration/'));
-
+    
     // Retourner le lien complet
     return 'https://jcafootball.com/administration/' . str_replace('\\', '/', $chemin);
     }
@@ -21,11 +21,12 @@
 
 @section('content')
 
-    @include('partials.loader')
+    {{-- @include('partials.loader') --}}
     @include('partials.navbar')
     @include('partials.hero')
     @include('partials.section.palmares')
     @include('partials.section.prochainMatch')
+    @include('partials.section.equipe')
     @include('partials.section.contact')
     @include('partials.footer')
     @include('components.message')

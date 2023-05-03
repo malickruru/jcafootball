@@ -17,8 +17,10 @@ class Controller extends BaseController
         $trophe = DB::table('Palmares')->where('classement','=',1)->get(); 
         // prochain match
         $match = Matchs::all()->where('date','>',now())->first(); 
+        // joueur
+        $players = DB::table('Joueur')->whereIn('id', [28,30,1,4])->get();
         
-        return view('page.accueil',compact(['trophe','match']));
+        return view('page.accueil',compact(['trophe','match','players']));
     }
 
     public function match(){
@@ -26,6 +28,12 @@ class Controller extends BaseController
         $fixtures = Matchs::all();
         $rating = DB::table('Classement')->get()->last();
         return view('page.match',compact(['next','fixtures','rating']));
+    }
+
+    public function joueur(){
+        $players = DB::table('Joueur')->orderBy('photo','desc')->get();
+        $coach = DB::table('Coach')->get();
+        return view('page.joueur',compact(['players','coach']));
     }
     
 }
